@@ -8,7 +8,7 @@ const initialState = {
 };
 
 function App() {
-  const { socket } = useSocket("http://localhost:4000");
+  const { socket } = useSocket("https://notesapp-jubl.onrender.com");
   const [note, setNote] = useState(initialState);
   const [notes, setNotes] = useState([]);
   const [isEdit, setIsEdit] = useState(false);
